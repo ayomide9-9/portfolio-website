@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ayomide is a Front-End Developer passionate about creating clean, responsive, and user-friendly websites using HTML, CSS, and JavaScript. Explore projects, design services, and creative collaborations.">
+    <link rel="stylesheet" href="Ayoisdeving_portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Ayoisdeving | Front-End Developer Portfolio</title>
+</head>
+<body>
+
+    <!--Navigation Bar-->
+    <header class="topbar">
+        <a href="index.html"><img src="portfolio-logo.png" alt="Ayoisdeving Logo" width="150px"></a>
+        <nav class="center">
+            <ul class="menu" id="MenuItems">
+                <li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
+                <li class="menu-item"><a href="#services" class="menu-link">Services</a></li>
+                <li class="menu-item"><a href="#about" class="menu-link">About</a></li>
+                <li class="menu-item"><a href="#skills" class="menu-link">Skills</a></li>
+                <li class="menu-item"><a href="#projects" class="menu-link">Projects</a></li>
+            </ul>
+        </nav>
+        <a href="#hire-space"><button class="hire-btn">Let's Talk</button></a>
+        <i class="fa-solid fa-bars hamburger" onclick="menutoggle()"></i>
+    </header>         <!--Navigation Bar Ends-->
+
+    <!--Hero Section-->
+    <main class="hero" id="home">
+        <div class="hero-row">
+            <div class="hero-column">
+                <h2 class="intro">Hi, I'm Ayomide.</h2>
+                <h1 class="stack">Front-End Developer</h1>
+                <p class="description">Blending thoughtful UI design with clean, 
+                    responsive development to create websites that look great and perform flawlessly.
+                </p>
+                <div class="analysis">
+                    <div class="analysis-card">
+                        <h3 class="analysis-top">01+</h3>
+                        <p class="analysis-bottom">Years Experience</p>
+                    </div>
+                    <div class="analysis-card">
+                        <h3 class="analysis-top">08+</h3>
+                        <p class="analysis-bottom">Projects</p>
+                    </div>
+                    <div class="analysis-card">
+                        <h3 class="analysis-top">03+</h3>
+                        <p class="analysis-bottom">Happy Clients</p>
+                    </div>
+                </div>
+                <a href="#projects"><button id="view-projects">View Projects &rarr;</button></a>
+               
+            </div>
+            <div class="hero-column">
+                <img src="ayoisdeving-pic.avif" alt="Ayoisdeving Hero Image" width="200px" class="hero-bg-img">
+            </div>
+        </div>
+    </main>       <!--Hero Section ends-->
+
+    <!--Services Section-->
+    <section class="services" id="services"> 
+        <h2 class="services-title">My Services</h2>
+        <p class="services-description">Designing clean scalable responsive websites</p>
+        <div class="grid">
+            <div class="grid-item">
+                <h3 class="grid-title">UI/UX Website Design</h3>
+                <p class="grid-description">Clean, user-focused layouts with clear structure, <br> 
+                   smooth navigation, and strong visual hierarchy.
+                </p>
+                <hr>
+                <div class="feature">
+                    <p class="feature-item">Modern layouts</p>
+                    <p class="feature-item">Responsive design</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h3 class="grid-title">Frontend Development</h3>
+                <p class="grid-description">Responsive interfaces using HTML, CSS, 
+                   and JavaScript for clean, consistent, reliable performance.
+                </p>
+                <hr>
+                <div class="feature">
+                    <p class="feature-item">Clean HTML/CSS</p>
+                    <p class="feature-item">Smooth interactions</p>
+                </div>
+            </div>
+            <div class="grid-item">
+                <h3 class="grid-title">Performance & Responsiveness</h3>
+                <p class="grid-description">Fast, mobile-first websites optimized for speed, 
+                   accessibility, and dependable performance.
+                </p>
+                <hr>
+                <div class="feature">
+                    <p class="feature-item">Speed optimization</p>
+                    <p class="feature-item">Asset efficiency</p>
+                </div>
+            </div>
+        </div>
+    </section>     <!--Services Section ends-->
+    
+    <!--About Section-->
+    <section class="about" id="about">
+    <hr>
+        <h2 class="about-title">About Me</h2>
+        <p class="about-description">
+            I’m a front-end developer and designer passionate about crafting clean, intuitive, 
+            and responsive digital experiences. 
+            I focus on turning ideas into seamless interfaces by understanding user needs, 
+            designing thoughtful UI layouts, and ensuring smooth interactions across devices.
+        </p>
+        <h3 class="approach">My Approach</h3>
+        <div class="approach-container">
+            <div class="approach-item">
+                <p class="feature-list"><span>01</span> Understand users & goals</p>
+            </div>
+            <div class="approach-item">
+                <p class="feature-list"><span>02</span> Create clean UI layouts</p>
+            </div>
+            <div class="approach-item">
+                <p class="feature-list"><span>03</span> Responsive experiences</p>
+            </div>
+        </div>
+    </section>       <!--About Section ends-->
+
+    <!--My skills Section-->
+   <section class="skills" id="skills">
+       <h2 class="skills-title">Skills</h2>
+       <p class="skills-description">Crafting seamless UI/UX and clean code</p>
+       <div class="grid-2">
+            <div class="grid-item-2">
+                <h3 class="grid-title">Core Skills</h3>
+                <div class="feature-2">
+                   <p class="feature-item-2">UI/UX layout</p>
+                   <p class="feature-item-2">Frontend Dev</p>
+                   <p class="feature-item-2">Responsive Web Design</p>
+                   <p class="feature-item-2">Component-Based Design</p>
+                </div>
+            </div>
+            <div class="grid-item-2">
+                <h3 class="grid-title">Frontend Tech</h3>
+                <div class="feature-2">
+                   <p class="feature-item-2">HTML</p>
+                   <p class="feature-item-2">CSS</p>
+                   <p class="feature-item-2">JS</p>
+                </div>
+            </div>
+            <div class="grid-item-2">
+                <h3 class="grid-title">Design Tools</h3>
+                <div class="feature-2">
+                   <p class="feature-item-2">Figma</p>
+                   <p class="feature-item-2">CorelDraw</p>
+                </div>
+            </div>
+            <div class="grid-item-2">
+                <h3 class="grid-title">Tools & Interaction</h3>
+                <div class="feature-2">
+                   <p class="feature-item-2">GitHub</p>
+                   <p class="feature-item-2">Netlify</p>
+                   <p class="feature-item-2">Vercel</p>
+                   <p class="feature-item-2">UI Interactions</p>
+                </div>
+            </div>
+       </div>
+   </section>       <!--My skills Section ends-->
+
+
+   <!--Projects Section-->
+   <section class="projects" id="projects">
+       <h2 class="projects-title">Projects</h2>
+       <p class="projects-description">A showcase of clean, modern, responsive websites</p>
+       <div class="grid-3">
+        <div class="grid-item-3">
+            
+        </div>
+        <div class="grid-item-3">
+
+        </div>
+        <div class="grid-item-3">
+
+        </div>
+        <div class="grid-item-3">
+
+        </div>
+       </div>
+   </section>     <!--Projects Section ends-->
+
+   <!--Contacts & forms Section-->
+   <section class="hire-space" id="hire-space">
+       <h2 class="hire-space-title">Start Your Project</h2>
+       <p class="hire-space-description">Build something amazing with me</p>
+       <div class="grid-4">
+            <div class="grid-item-4">
+                <h3 class="grid-title">Share Your Vision</h3>
+                <div class="forms">
+                    <input type="text" placeholder="Name">
+                    <input type="email" placeholder="Email">
+                    <textarea placeholder="About your project (optional)" rows="5"></textarea>
+                        <select>
+                            <option>Select budget</option>
+                            <option>₦100,000 - ₦150,000</option>
+                            <option>₦150,000 - ₦200,000</option>
+                            <option>₦200,000+</option>
+                            <option>Not sure yet</option>
+                        </select>
+                </div>
+                <button class="hire-btn">Submit</button>
+            </div>
+            <div class="grid-item-4">
+                <h3 class="grid-title">Quick Contact? Scan Me!</h3>
+                <div class="qr-code">
+                    <img src="QR_code.avif" alt="Email QR Code" width="250px">
+                </div>
+                <div class="features-4">
+                    <h4 class="direct-email">Email me directly:</h4>
+                    <p class="email-address">Yourdxtny@gmail.com</p>
+                </div>
+            </div>
+       </div>
+   </section>       <!--Contacts & forms Section ends-->
+
+
+    <!--Footer Section -->
+    <footer class="footer">
+        <h1 class="footer-title">Jimoh Ayomide</h1>
+        <p class="footer-description">End-to-end design & development for modern, premium websites.</p>
+        <h3 class="socials-title">Get social with us</h3>
+        <div class="socials">
+            <a href="#" class="socials-link"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="socials-link"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        <hr>
+        <p class="copyright">&copy 2026 Ayoisdeving - All rights reserved.</p>
+    </footer>     <!--Footer Section ends-->
+    
+
+    <script>
+let MenuItems = document.getElementById("MenuItems");
+
+function menutoggle(){
+
+    if(MenuItems.style.display == "flex"){
+        MenuItems.style.display = "none";
+    }
+    else{
+        MenuItems.style.display = "flex";
+        MenuItems.style.flexDirection = "column";
+    }
+
+}
+</script>
+</body>
+</html>
