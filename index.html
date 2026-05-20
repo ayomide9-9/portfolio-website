@@ -26,7 +26,7 @@
             </ul>
         </nav>
         <a href="#hire-space"><button class="hire-btn">Let's Talk</button></a>
-        <i class="fa-solid fa-bars hamburger" onclick="menutoggle()"></i>
+        <i class="fa-solid fa-bars hamburger" id="hamburger"></i>
     </header>         <!--Navigation Bar Ends-->
 
     <!--Hero Section-->
@@ -198,9 +198,10 @@
                 <div class="forms">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
+                    <input type="number" placeholder="Phone Number e.g +234.., +1..">
                     <textarea placeholder="About your project (optional)" rows="5"></textarea>
                         <select>
-                            <option>Select budget</option>
+                            <option class="select-budget">Select budget</option>
                             <option>₦100,000 - ₦150,000</option>
                             <option>₦150,000 - ₦200,000</option>
                             <option>₦200,000+</option>
@@ -238,19 +239,16 @@
     
 
     <script>
-let MenuItems = document.getElementById("MenuItems");
-
-function menutoggle(){
-
-    if(MenuItems.style.display == "flex"){
-        MenuItems.style.display = "none";
-    }
-    else{
-        MenuItems.style.display = "flex";
-        MenuItems.style.flexDirection = "column";
-    }
-
-}
+const menu = document.getElementById("MenuItems");
+const hamburger = document.getElementById("hamburger");
+hamburger.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});
+document.querySelectorAll(".menu-link").forEach(link => {
+    link.addEventListener("click", () => {
+        menu.classList.remove("active");
+    });
+});
 </script>
 </body>
 </html>
