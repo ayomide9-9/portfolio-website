@@ -303,6 +303,49 @@ section{            /*padding for sections*/
     text-align: center;
     font-size: var(--fs-base);
 }
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: calc(var(--space-lg) + 15px);
+    padding-top: var(--space-lg);
+}
+.grid-item-3{
+    border: solid rgba(236,72,153,0.5);
+    border-radius: var(--space-md);
+    padding: var(--space-md);
+    cursor: pointer;
+}
+.grid-item-3:hover{
+    background: whitesmoke;
+}
+.live-link{
+    text-decoration: none;
+    color: black;
+}
+.project-image{
+    width: 100%;
+}
+.project-title{
+    padding-top: var(--space-lg);
+    padding-bottom: var(--space-md);
+}
+.project-detail{
+    padding-bottom: var(--space-lg);
+    font-size: var(--fs-base);
+}
+.live-website{
+    padding: calc(var(--space-vsm) + 8px);
+    background: linear-gradient(to right, #A855F7, #C084FC, #EC4899);
+    color: var(--text-white);
+    font-size: var(--fs-base);
+    border-radius: var(--space-sm);
+}
+.live-website:hover{
+    background: var(--text-white);
+    color: black;
+    border: solid thin #9A9A9A;
+}
+
 /*My Projects ends*/
 
 /*Contact & forms*/

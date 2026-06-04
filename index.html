@@ -173,19 +173,52 @@
        <h2 class="projects-title">Projects</h2>
        <p class="projects-description">A showcase of clean, modern, responsive websites</p>
        <div class="grid-3">
-        <div class="grid-item-3">
-            
+           <div class="grid-item-3">
+                <a href="https://zuritable.netlify.app/" class="live-link">
+                    <img src="zuritable.png" alt="zuritable" class="project-image">
+                    <h3 class="project-title">ZURI TABLE</h3>
+                    <p class="project-detail">
+                        Luxury African restaurant landing page inspired by premium editorial 
+                        restaurant experiences. Built with responsive layouts, modern typography, 
+                        smooth interactions, and optimized image performance.
+                    </p>
+                    <span class="live-website">Live Website</span>
+                </a>
+            </div>
+           <div class="grid-item-3">
+                <a href="" class="live-link">
+                    <img src="" alt="" class="project-image">
+                    <h3 class="project-title"></h3>
+                    <p class="project-detail">
+                        
+                    </p>
+                    <span class="live-website">Live Website</span>
+                </a>
+            </div>
+           <div class="grid-item-3">
+                <a href="" class="live-link">
+                    <img src="" alt="" class="project-image">
+                    <h3 class="project-title"></h3>
+                    <p class="project-detail">
+                        
+                    </p>
+                    <span class="live-website">Live Website</span>
+                </a>
+            </div>
+           <div class="grid-item-3">
+                <a href="" class="live-link">
+                    <img src="" alt="" class="project-image">
+                    <h3 class="project-title"></h3>
+                    <p class="project-detail">
+                        
+                    </p>
+                    <span class="live-website">Live Website</span>
+                </a>
+            </div>
+          
+          
+       
         </div>
-        <div class="grid-item-3">
-
-        </div>
-        <div class="grid-item-3">
-
-        </div>
-        <div class="grid-item-3">
-
-        </div>
-       </div>
    </section>     <!--Projects Section ends-->
 
    <!--Contacts & forms Section-->
@@ -195,20 +228,22 @@
        <div class="grid-4">
             <div class="grid-item-4">
                 <h3 class="grid-title">Share Your Vision</h3>
-                <div class="forms">
-                    <input type="text" placeholder="Name">
-                    <input type="email" placeholder="Email">
-                    <input type="number" placeholder="Phone Number e.g +234.., +1..">
-                    <textarea placeholder="About your project (optional)" rows="5"></textarea>
-                        <select>
+                <form class="forms" action="https://formspree.io/f/mwvjewpy" method="POST">
+                    <input type="text" placeholder="Name"  name="name">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="tel" placeholder="Phone Number e.g +234.., +1.." name="phone" >
+                    <textarea placeholder="About your project (optional)" rows="5" name="project" ></textarea>
+                        <select name="budget" required>
                             <option class="select-budget">Select budget</option>
                             <option>₦100,000 - ₦150,000</option>
                             <option>₦150,000 - ₦200,000</option>
                             <option>₦200,000+</option>
                             <option>Not sure yet</option>
                         </select>
-                </div>
-                <button class="hire-btn">Submit</button>
+                        <input type="hidden" name="_next" value="https://ayoisdeving.netlify.app/thank-you.html">
+                        <button class="hire-btn" type="submit">Submit</button>
+                    </form>
+                
             </div>
             <div class="grid-item-4">
                 <h3 class="grid-title">Quick Contact? Scan Me!</h3>
